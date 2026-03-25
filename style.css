@@ -1,0 +1,151 @@
+/* Define variáveis CSS globais para cores, transições e outros valores reutilizáveis */
+:root {
+  --bg: #141414; /* Cor de fundo escura */
+  --text: #e5e5e5; /* Cor do texto principal */
+  --text-soft: #a0a0a0; /* Cor do texto secundário */
+  --text-strong: #ffffff; /* Cor do texto destacado */
+  --accent: #e50914; /* Cor de destaque (vermelho Netflix) */
+  --transition: 0.3s ease; /* Duração e tipo de transição */
+}
+
+/* Aplica box-sizing border-box a todos os elementos para incluir padding e border na largura/altura total */
+* {
+  box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página */
+body {
+  margin: 0; /* Remove margem padrão */
+  font-family: Arial, sans-serif; /* Define fonte sans-serif */
+  background: radial-gradient(circle at 20% 10%, rgba(60, 0, 20, 0.4), transparent 40%), /* Gradiente radial para fundo */
+              radial-gradient(circle at 80% 90%, rgba(0, 20, 60, 0.3), transparent 40%), /* Segundo gradiente */
+              #141414; /* Cor de fundo base */
+  color: var(--text); /* Cor do texto */
+  min-height: 100vh; /* Altura mínima de 100% da viewport */
+  display: grid; /* Usa grid para layout */
+  place-items: center; /* Centraliza conteúdo */
+}
+
+/* Container principal da página de seleção de perfis */
+.profile-picker {
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza o título h1 */
+h1 {
+  color: white; /* Cor branca para o título */
+  margin-bottom: 5rem; /* Margem inferior de 2rem */
+  font-size: 48px; /* Tamanho da fonte grande */
+}
+
+/* CONTAINER DOS PERFIS - Layout flexível para os perfis */
+.profiles {
+  display: flex; /* Usa flexbox para layout */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 2.5rem; /* Espaçamento entre perfis */
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+/* LINK - Estiliza os links dos perfis */
+.profile-link {
+  text-decoration: none; /* Remove sublinhado */
+  color: inherit; /* Herda cor do pai */
+  transition: transform var(--transition); /* Transição suave para transformações */
+}
+
+/* CARD - Estiliza cada cartão de perfil */
+.profile {
+  width: 280px; /* Largura fixa do cartão */
+  text-align: center; /* Centraliza texto */
+  margin: 0; /* Remove margem */
+}
+
+/* Imagem dentro do perfil */
+.profile img {
+  width: 100%; /* Largura total do contêiner */
+  height: 100%; /* Altura total */
+  object-fit: cover; /* Corta imagem para cobrir sem distorcer */
+  aspect-ratio: 1 / 1; /* Mantém proporção quadrada */
+}
+/* NOME - Estiliza o nome do perfil (figcaption) */
+.profile figcaption {
+  font-size: 1.6rem; /* Tamanho da fonte */
+  margin-top: 10px; /* Margem superior */
+  color: #a0a0a0; /* Cor cinza clara */
+  letter-spacing: 0.5px; /* Espaçamento entre letras */
+  font-weight: 500; /* Peso da fonte médio */
+  transition: 0.3s; /* Transição suave */
+}
+
+/* HOVER (EFEITO NETFLIX) - Efeitos ao passar o mouse */
+.profile-link:hover img {
+  transform: scale(1.1); /* Aumenta tamanho */
+  filter: brightness(1.2); /* Aumenta brilho */
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.3); /* Sombra vermelha */
+  border-color: var(--accent); /* Borda vermelha */
+  color: #ffffff; /* Cor branca */
+}
+
+.profile-link:hover figcaption {
+  color: white; /* Muda cor do nome para branco */
+}
+
+/* EFEITO DE FOCO (profissional) - Efeitos de foco para acessibilidade */
+.profiles:hover .profile-link {
+  opacity: 0.5; /* Reduz opacidade dos não-hover */
+  transform: scale(0.95);/* Reduz ligeiramente o tamanho dos não-hover */
+}
+
+.profiles:hover .profile-link:hover {
+  opacity: 1; /* Mantém opacidade total no hover */
+   transform: scale(1.1); /* Aumenta tamanho no hover */
+}
+
+/* LOGO - Estiliza o logo da Netflix */
+/*.logo {
+  position: absolute; /* Posicionamento absoluto 
+  top: 20px; /* Distância do topo 
+  left: 30px; /* Distância da esquerda 
+  font-size: 3rem; /* Tamanho grande 
+  font-weight: bold; /* Negrito 
+  color: #e50914; /* Vermelho Netflix 
+}*/
+
+.logo {
+  position: fixed;
+  top: 45px;
+  left: 40px;
+
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem; /* 👈 maior */
+  letter-spacing: 3px;
+
+  color: #ff0000; 
+
+  text-transform: uppercase;
+
+  transform: skewX(-6deg);
+  
+
+  /* efeito místico */
+  text-shadow:
+    0 0 5px rgba(139, 15, 58, 0.6),
+    0 0 15px rgba(120, 0, 80, 0.5),
+    0 4px 10px rgba(0, 0, 0, 0.8);
+
+  z-index: 10;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+  z-index: 10;
+  
+}
