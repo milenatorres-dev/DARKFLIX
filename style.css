@@ -29,6 +29,7 @@ body {
 /* Container principal da página de seleção de perfis */
 .profile-picker {
   text-align: center; /* Centraliza o texto */
+  margin-top: 120px; /* Margem superior para afastar do topo */
 }
 
 /* Estiliza o título h1 */
@@ -101,16 +102,7 @@ h1 {
    transform: scale(1.1); /* Aumenta tamanho no hover */
 }
 
-/* LOGO - Estiliza o logo da Netflix */
-/*.logo {
-  position: absolute; /* Posicionamento absoluto 
-  top: 20px; /* Distância do topo 
-  left: 30px; /* Distância da esquerda 
-  font-size: 3rem; /* Tamanho grande 
-  font-weight: bold; /* Negrito 
-  color: #e50914; /* Vermelho Netflix 
-}*/
-
+/* Estiliza o logo principal */
 .logo {
   position: fixed;
   top: 45px;
@@ -136,6 +128,7 @@ h1 {
   z-index: 10;
 }
 
+/* Estiliza o cabeçalho fixo */
 header {
   position: fixed;
   top: 0;
