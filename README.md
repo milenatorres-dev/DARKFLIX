@@ -20,7 +20,7 @@ Este projeto foi desenvolvido durante a **Imersão Front-End da Alura**, com o o
 
 ## 🌐 Projeto Online
 
-👉 https://seuusuario.github.io/mysticflix
+👉 https://github.com/milenatorres-dev/MYSTICFLIX
 
 ## 📌 Status do Projeto
 
