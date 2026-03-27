@@ -1,7 +1,7 @@
 
-# 🎬 MYSTICFLIX
+# 🎬 DARKFLIX
 
-O **MYSTICFLIX** é uma interface de streaming inspirada na Netflix, com uma identidade visual própria baseada em uma estética mística, sombria e artística.
+O **DARKFLIX** é uma interface de streaming inspirada na Netflix, com uma identidade visual própria baseada em uma estética mística, sombria e artística.
 
 Este projeto foi desenvolvido durante a **Imersão Front-End da Alura**, com o objetivo de aplicar conceitos fundamentais de desenvolvimento web, explorando UI/UX, organização de layout e criação de uma experiência visual imersiva.
 
@@ -20,7 +20,7 @@ Este projeto foi desenvolvido durante a **Imersão Front-End da Alura**, com o o
 
 ## 🌐 Projeto Online
 
-👉 https://github.com/milenatorres-dev/MYSTICFLIX
+👉 https://github.com/milenatorres-dev/DARKFLIX
 
 ## 📌 Status do Projeto
 

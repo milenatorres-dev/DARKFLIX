@@ -1,52 +1,77 @@
-<!DOCTYPE html>
+git add .<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfis</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysticflix - Quem está assistindo?</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class = "logo">MYSTICFLIX</div>
+
+    <header class="site-header" role="banner">
+        <div class="logo-container">
+            <h1 class="site-logo">DARKFLIX</h1>
+            </div>
     </header>
 
-<main class="profile-picker">
-  <h1>Quem está assistindo?</h1>
+    <main class="profile-picker-container" role="main">
+        
+        <header class="profile-header">
+            <h2 class="profile-title">Quem está assistindo?</h2>
+        </header>
 
-  <section class="profiles">
+        <section class="profiles-section" aria-labelledby="profile-title">
+            
+            <div class="profiles-list">
 
-    <a href="#" class="profile-link">
-      <figure class="profile">
-        <img src="images/perfil1.jpg" alt="DJ gótica com fones e asas">
-        <figcaption>Lilith do After</figcaption>
-      </figure>
-    </a>
+                <article class="profile-item">
+                    <a href="#" class="profile-link" aria-label="Acessar perfil de Dark Lilith">
+                        <figure class="profile-figure">
+                            <img src="images/perfil1.jpg" alt="Avatar místico de Dark Lilith" class="profile-avatar">
+                            <figcaption class="profile-name">Dark Lilith</figcaption>
+                        </figure>
+                    </a>
+                </article>
 
-    <a href="#" class="profile-link">
-      <figure class="profile">
-        <img src="images/perfil2.jpg" alt="Personagem gótica segurando gato">
-        <figcaption>Senhora dos Miados</figcaption>
-      </figure>
-    </a>
+                <article class="profile-item">
+                    <a href="#" class="profile-link" aria-label="Acessar perfil de Senhora dos Miados">
+                        <figure class="profile-figure">
+                            <img src="images/perfil2.jpg" alt="Avatar místico de Senhora dos Miados" class="profile-avatar">
+                            <figcaption class="profile-name">Senhora dos Miados</figcaption>
+                        </figure>
+                    </a>
+                </article>
 
-    <a href="#" class="profile-link">
-      <figure class="profile">
-        <img src="images/perfil3.jpg" alt="Personagem gótica em castelo">
-        <figcaption>Depressão Vitoriana</figcaption>
-      </figure>
-    </a>
+                <article class="profile-item">
+                    <a href="#" class="profile-link" aria-label="Acessar perfil de Depressão Vitoriana">
+                        <figure class="profile-figure">
+                            <img src="images/perfil3.jpg" alt="Avatar místico de Depressão Vitoriana" class="profile-avatar">
+                            <figcaption class="profile-name">Depressão Vitoriana</figcaption>
+                        </figure>
+                    </a>
+                </article>
 
-    <a href="#" class="profile-link">
-      <figure class="profile">
-        <img src="images/perfil4.jpg" alt="DJ gótica steampunk com elementos químicos">
-        <figcaption>Cientista do Caos</figcaption>
-      </figure>
-    </a>
+                <article class="profile-item">
+                    <a href="#" class="profile-link" aria-label="Acessar perfil de Cientista do Caos">
+                        <figure class="profile-figure">
+                            <img src="images/perfil4.jpeg" alt="Avatar místico de Cientista do Caos" class="profile-avatar">
+                            <figcaption class="profile-name">Cientista do Caos</figcaption>
+                        </figure>
+                    </a>
+                </article>
 
-  </section>
-</main>
+            </div> </section>
+
+        <footer class="profile-footer">
+            <button class="manage-profiles-button" type="button">Gerenciar Perfis</button>
+        </footer>
+
+    </main>
 
 </body>
 </html>
