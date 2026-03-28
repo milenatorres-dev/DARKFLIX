@@ -28,9 +28,9 @@
         <section class="profiles-section" aria-labelledby="profile-title">
             
             <div class="profiles-list">
-
+                <!-- Perfil 1 -->
                 <article class="profile-item">
-                    <a href="#" class="profile-link" aria-label="Acessar perfil de Dark Lilith">
+                    <a href="javascript:void(0)" onclick="selecionarPerfil('Dark Lilith', 'images/perfil1.jpg')" class="profile-link">
                         <figure class="profile-figure">
                             <img src="images/perfil1.jpg" alt="Avatar místico de Dark Lilith" class="profile-avatar">
                             <figcaption class="profile-name">Dark Lilith</figcaption>
@@ -38,26 +38,27 @@
                     </a>
                 </article>
 
+                <!-- Perfil 2 -->
                 <article class="profile-item">
-                    <a href="#" class="profile-link" aria-label="Acessar perfil de Senhora dos Miados">
-                        <figure class="profile-figure">
-                            <img src="images/perfil2.jpg" alt="Avatar místico de Senhora dos Miados" class="profile-avatar">
+                    <a href="javascript:void(0)" onclick="selecionarPerfil('Senhora dos Miados', 'images/perfil2.jpg')" class="profile-link">
+                        <figure class="profile-figure"> <img src="images/perfil2.jpg" alt="Avatar místico de Senhora dos Miados" class="profile-avatar">   
                             <figcaption class="profile-name">Senhora dos Miados</figcaption>
                         </figure>
                     </a>
                 </article>
 
+                <!-- Perfil 3 -->
                 <article class="profile-item">
-                    <a href="#" class="profile-link" aria-label="Acessar perfil de Depressão Vitoriana">
+                    <a href="javascript:void(0)" onclick="selecionarPerfil('Depressão Vitoriana', 'images/perfil3.jpg')" class="profile-link" aria-label="Acessar perfil de Depressão Vitoriana">
                         <figure class="profile-figure">
                             <img src="images/perfil3.jpg" alt="Avatar místico de Depressão Vitoriana" class="profile-avatar">
                             <figcaption class="profile-name">Depressão Vitoriana</figcaption>
                         </figure>
                     </a>
                 </article>
-
+                <!-- Perfil 4 -->
                 <article class="profile-item">
-                    <a href="#" class="profile-link" aria-label="Acessar perfil de Cientista do Caos">
+                    <a href="javascript:void(0)" onclick="selecionarPerfil('Cientista do Caos', 'images/perfil4.jpeg')" class="profile-link" aria-label="Acessar perfil de Cientista do Caos">
                         <figure class="profile-figure">
                             <img src="images/perfil4.jpeg" alt="Avatar místico de Cientista do Caos" class="profile-avatar">
                             <figcaption class="profile-name">Cientista do Caos</figcaption>
@@ -72,6 +73,17 @@
         </footer>
 
     </main>
-
+    <script>
+        // Função que deve ser chamada quando você clica na imagem do perfil
+        function selecionarPerfil(nome, imagem) {
+            // AQUI É ONDE A MÁGICA COMEÇA:
+            localStorage.setItem('perfilAtivoNome', nome);
+            localStorage.setItem('perfilAtivoImagem', '../' + imagem);
+            
+            // Depois de salvar, ele pula para a tela de filmes
+            window.location.href = 'catalogo/catalogo.html'; 
+        }
+    </script>
+   
 </body>
 </html>
